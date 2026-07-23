@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMELUXE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/x-icon" href="images/logo.ico">
+    <script src="https://kit.fontawesome.com/e2d5ca08ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <nav class="login-navbar">
+    <a href="index.html" class="login-logo">
+        <span>HOMELUXE</span>
+    </a>
+
+    <a href="index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Home
+    </a>
+</nav>
+    <section class="login-page">
+        <div class="login-box">
+            <h1>Login to Home<span>Luxe</span></h1>
+            <form >
+                <h3> Enter your Email</h3>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <h3> Enter your Password</h3>
+                 <div style="position: relative">
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+            />
+            <span
+              onclick="toggle()"
+              style="
+                position: absolute;
+                right: 12px;
+                top: 89%;
+                transform: translateY(-50px);
+              "
+            >
+              <i style="font-size: 80%;" class="fa-solid fa-eye"></i>
+            </span>
+          </div>
+                <button type="button" onclick="loggin()">Login</button>
+                <p id="error" style="color: red;"></p>
+                <p><a href="signup.html">Forget Password</a></p>
+                <p>Don't Have Your Account ? <a href="signup.html">Signup</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
