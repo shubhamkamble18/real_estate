@@ -11,19 +11,29 @@
     
 </head>
 <body>
-    <section class="login-page">
-        <div class="login-box">
+      <nav class="login-navbar">
+      <a href="index.html" class="login-logo"> HOMELUXE </a>
+
+      <a href="index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Home
+      </a>
+    </nav>
+    <section class="login-page " style="display: flex; justify-content: flex-end; ">
+        <div class="login-box" style="justify-content: center;margin-right:10px ">
             <h2>Create Account in Home<span>Luxe</span></h2>
             <form >
+                <label >Enter name</label>
                 <input type="name" placeholder="Enter your Name" required>
-                
+                <label>Email Address</label>
                 <input type="email" placeholder="Enter your email" required>
-                
+                <label>Password</label>
                 <input type="password" placeholder=" Enter your password " required>
-                
+                <label>Confirm Password</label>
                 <input type="password" placeholder="confirm password " required>
                 <button>Login</button>
-                <p>Already Having An Account <a href="login.html">Login</a></p>
+                <p style="text-align: center;">Already Having An Account <a href="login.html" style="color:#d4af37;text-decoration:none;font-weight:600;"
+                     >Login</a></p>
             </form>
         </div>
     </section>

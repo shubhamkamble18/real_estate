@@ -1,58 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMELUXE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/x-icon" href="images/logo.ico">
-    <script src="https://kit.fontawesome.com/e2d5ca08ae.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-   <nav class="login-navbar">
-    <a href="index.html" class="login-logo">
-        <span>HOMELUXE</span>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOMELUXE | Login</title>
 
-    <a href="index.html" class="back-home">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e2d5ca08ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="login-navbar">
+      <a href="index.html" class="login-logo"> HOMELUXE </a>
+
+      <a href="index.html" class="back-home">
         <i class="fa-solid fa-arrow-left"></i>
         Back to Home
-    </a>
-</nav>
+      </a>
+    </nav>
+
     <section class="login-page">
-        <div class="login-box">
-            <h1>Login to Home<span>Luxe</span></h1>
-            <form >
-                <h3> Enter your Email</h3>
-                <input id="email" type="email" placeholder="Enter your email" required>
-                <h3> Enter your Password</h3>
-                 <div style="position: relative">
+      <!-- Background Overlay -->
+
+      <div class="bg-overlay"></div>
+
+      <!-- Left Content -->
+
+      <div class="hero-content">
+        <h1>
+          Find Your <br />
+          <span>Dream Home</span>
+        </h1>
+
+        <div class="line"></div>
+
+        <p>
+          Premium Properties.<br />
+          Trusted Agents.<br />
+          Verified Listings.
+        </p>
+      </div>
+
+      <div class="login-box">
+        <h2>Welcome <span>Back</span></h2>
+
+        <p class="subtitle">Login to continue to HOMELUXE</p>
+
+        <form>
+          <label>Email Address</label>
+
+          <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label>Password</label>
+
+          <div class="password-box">
             <input
+              id="password"
               type="password"
               placeholder="Enter your password"
-              id="password"
+              required
             />
-            <span
-              onclick="toggle()"
-              style="
-                position: absolute;
-                right: 12px;
-                top: 89%;
-                transform: translateY(-50px);
-              "
-            >
-              <i style="font-size: 80%;" class="fa-solid fa-eye"></i>
+
+            <span class="eye" onclick="toggle()">
+              <i class="fa-solid fa-eye"></i>
             </span>
           </div>
-                <button type="button" onclick="loggin()">Login</button>
-                <p id="error" style="color: red;"></p>
-                <p><a href="signup.html">Forget Password</a></p>
-                <p>Don't Have Your Account ? <a href="signup.html">Signup</a></p>
-            </form>
-        </div>
+
+          <div class="login-options">
+            <label class="remember">
+              <input type="checkbox" />
+
+              Remember Me
+            </label>
+
+            <a href="signup.html"> Forgot Password? </a>
+          </div>
+
+          <button type="button" onclick="loggin()">Login</button>
+
+          <p id="error"></p>
+
+          <div class="divider">
+            <span>OR</span>
+          </div>
+
+          <p class="signup-text">
+            Don't have an account?
+
+            <a href="signup.html"> Sign Up </a>
+          </p>
+        </form>
+      </div>
     </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
