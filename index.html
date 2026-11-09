@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOMELUXE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/x-icon" href="images/logo.ico">
-    <script src="https://kit.fontawesome.com/e2d5ca08ae.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="images/x-icon" href="images/logo.ico" />
+    <script
+      src="https://kit.fontawesome.com/e2d5ca08ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="home-page">
     <!-- header section  -->
     <header class="site-header">
       <nav class="navbar">
         <a href="index.html" class="brand" aria-label="HOMELUXE home">
-          <img class="logo" src="/images/LOGO2.png" alt="">
+          <img class="logo" src="images/LOGO2.png" alt="" />
           <span class="brand-name">HOMELUXE</span>
         </a>
 
@@ -34,253 +39,288 @@
           </li>
         </ul>
 
-        <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
     </header>
-    <section class="banner">
-      <div class="banner_text">
-        <h1>WE BUILD YOUR DREAM HOUSE</h1>
-        <p>Luxury homes designed for your perfect lifestyle</p>
-        <button class="btn-dark">Explore Properties</button>
+    <section class="banner" aria-labelledby="banner-title">
+      <div class="banner-content">
+        <p class="banner-eyebrow">
+          <span></span> HOMELUXE <span class="eyebrow-divider">/</span> PREMIUM
+          REAL ESTATE
+        </p>
+        <h1 id="banner-title">
+          Find a place that feels like <span>your own.</span>
+        </h1>
+        <p class="banner-description">
+          Explore thoughtfully selected homes in the locations you love, with
+          expert guidance at every step.
+        </p>
+        <div class="banner-actions">
+          <a class="banner-primary" href="property.html"
+            >Explore properties
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+          ></a>
+          <a class="banner-secondary" href="about.html">Discover HOMELUXE</a>
+        </div>
+        <p class="banner-note">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Premium
+          homes. Personal guidance. A better move.
+        </p>
       </div>
-      
     </section>
 
+    <section class="propertyone">
+      <h2>Featured properties</h2>
 
-     <section class="propertyone">
-    <h2>OUR BEST PROPERTIES</h2>
+      <div class="container">
+        <div class="card">
+          <img src="images/property1.jpeg" alt="Luxury Villa" />
 
-    <div class="container">
+          <div class="card-content">
+            <h3>ANTILIA BANDRA</h3>
+
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> Bandra, Mumbai
+            </p>
+
+            <p class="price">₹4.5 Cr</p>
+
+            <a class="property-btn" href="property.html">View details</a>
+          </div>
+        </div>
 
         <div class="card">
-    <img src="images/property1.jpeg" alt="Luxury Villa">
+          <img src="images/property2.jpeg" alt="Luxury Villa" />
 
-    <div class="card-content">
-        <h3>ANTILIA BANDRA</h3>
+          <div class="card-content">
+            <h3>MANAT LOWER PAREL</h3>
 
-        <p class="location">
-            <i class="fa-solid fa-location-dot"></i> Bandra, Mumbai
-        </p>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> lower parel, Mumbai
+            </p>
 
-        <p class="price">₹4.5 Cr</p>
+            <p class="price">₹10.0 Cr</p>
 
-        <button class="property-btn">View Details</button>
-    </div>
-</div>
-
-          <div class="card">
-    <img src="images/property2.jpeg" alt="Luxury Villa">
-
-    <div class="card-content">
-        <h3>MANAT LOWER PAREL</h3>
-
-        <p class="location">
-            <i class="fa-solid fa-location-dot"></i> lower parel, Mumbai
-        </p>
-
-        <p class="price">₹10.0 Cr</p>
-
-        <button class="property-btn">View Details</button>
-    </div>
-</div>
-
-            <div class="card">
-    <img src="images/property3.jpeg" alt="Luxury Villa">
-
-    <div class="card-content">
-        <h3>RUBY LONAVALA VILLA</h3>
-
-        <p class="location">
-            <i class="fa-solid fa-location-dot"></i>lonavala
-        </p>
-
-        <p class="price">₹6.0 Cr</p>
-
-        <button class="property-btn">View Details</button>
-    </div>
-</div>
+            <a class="property-btn" href="property.html">View details</a>
+          </div>
+        </div>
 
         <div class="card">
-    <img src="images/property4.jpeg" alt="Luxury Villa">
+          <img src="images/property3.jpeg" alt="Luxury Villa" />
 
-    <div class="card-content">
-        <h3>EMPIRE BANGALORE</h3>
+          <div class="card-content">
+            <h3>RUBY LONAVALA VILLA</h3>
 
-        <p class="location">
-            <i class="fa-solid fa-location-dot"></i> mind-space , bangalore
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i>lonavala
+            </p>
+
+            <p class="price">₹6.0 Cr</p>
+
+            <a class="property-btn" href="property.html">View details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/property4.jpeg" alt="Luxury Villa" />
+
+          <div class="card-content">
+            <h3>EMPIRE BANGALORE</h3>
+
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> mind-space , bangalore
+            </p>
+
+            <p class="price">₹9.0 Cr</p>
+
+            <a class="property-btn" href="property.html">View details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="choose-us">
+      <div class="choose-heading">
+        <h2>A better way to find home</h2>
+        <p>
+          Personal guidance, verified listings, and considered service from
+          first viewing to final signature.
         </p>
+      </div>
 
-        <p class="price">₹9.0 Cr</p>
-
-        <button class="property-btn">View Details</button>
-    </div>
-</div>
-
-    </div>
-</section>
-<!-- WHY CHOOSE US SECTION -->
-<section class="choose-us">
-
-    <div class="choose-heading">
-        <h2>WHY CHOOSE HOMELUXE</h2>
-        <p>We deliver premium real estate experiences with trust, quality, and excellence.</p>
-    </div>
-
-    <div class="choose-container">
-
+      <div class="choose-container">
         <div class="choose-card">
-            <i class="fa-solid fa-house"></i>
-            <h3>Premium Properties</h3>
-            <p>Handpicked luxury villas, apartments, and investment properties in prime locations.</p>
+          <i class="fa-solid fa-house"></i>
+          <h3>Premium Properties</h3>
+          <p>
+            Handpicked luxury villas, apartments, and investment properties in
+            prime locations.
+          </p>
         </div>
 
         <div class="choose-card">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Trusted & Secure</h3>
-            <p>Transparent property verification with secure documentation and hassle-free transactions.</p>
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Trusted & Secure</h3>
+          <p>
+            Transparent property verification with secure documentation and
+            hassle-free transactions.
+          </p>
         </div>
 
         <div class="choose-card">
-            <i class="fa-solid fa-headset"></i>
-            <h3>24/7 Customer Support</h3>
-            <p>Our expert consultants are always available to guide you through every step.</p>
+          <i class="fa-solid fa-headset"></i>
+          <h3>24/7 Customer Support</h3>
+          <p>
+            Our expert consultants are always available to guide you through
+            every step.
+          </p>
         </div>
 
         <div class="choose-card">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Prime Locations</h3>
-            <p>Properties situated in the most desirable cities and rapidly growing investment areas.</p>
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Prime Locations</h3>
+          <p>
+            Properties situated in the most desirable cities and rapidly growing
+            investment areas.
+          </p>
         </div>
+      </div>
+    </section>
+    <!-- customer experince -->
 
-    </div>
+    <section class="experince">
+      <div class="customer-heading">
+        <h2>Kind words from our clients</h2>
+        <p>
+          See what our happy homeowners have to say about their HOMELUXE
+          experience.
+        </p>
+      </div>
 
-</section>
-<!-- customer experince -->
-
-<section class="experince">
-
-    <div class="customer-heading">
-        <h2>CLIENT EXPERINCES</h2>
-        <p>See what our happy homeowners have to say about their HOMELUXE experience.</p>
-    </div>
-
-    <div class="experince-container">
-
+      <div class="experince-container">
         <div class="experince-card">
-            <h3>Rahul Sharma</h3>
-            <span>Mumbai</span>
+          <h3>Rahul Sharma</h3>
+          <span>Mumbai</span>
 
-            <div class="stars">
-                ★★★★★
-            </div>
+          <div class="stars">★★★★★</div>
 
-            <p>
-                "HOMELUXE made buying our dream villa incredibly simple. Their team was professional, honest, and guided us through every step."
-            </p>
+          <p>
+            "HOMELUXE made buying our dream villa incredibly simple. Their team
+            was professional, honest, and guided us through every step."
+          </p>
         </div>
 
         <div class="experince-card">
-            <h3>Priya Mehta</h3>
-            <span>Pune</span>
+          <h3>Priya Mehta</h3>
+          <span>Pune</span>
 
-            <div class="stars">
-                ★★★★★
-            </div>
+          <div class="stars">★★★★★</div>
 
-            <p>
-                "Excellent service with premium properties. The entire buying process was smooth, transparent, and stress-free."
-            </p>
+          <p>
+            "Excellent service with premium properties. The entire buying
+            process was smooth, transparent, and stress-free."
+          </p>
         </div>
 
         <div class="experince-card">
-            <h3>Amit Verma</h3>
-            <span>Bangalore</span>
+          <h3>Amit Verma</h3>
+          <span>Bangalore</span>
 
-            <div class="stars">
-                ★★★★★
-            </div>
+          <div class="stars">★★★★★</div>
 
-            <p>
-                "Highly recommended! We found the perfect investment property thanks to HOMELUXE's experienced consultants."
-            </p>
+          <p>
+            "Highly recommended! We found the perfect investment property thanks
+            to HOMELUXE's experienced consultants."
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- SHARE EXPERIENCE -->
 
-</section>
-
-<!-- SHARE EXPERIENCE -->
-
-<section class="review-section">
-
-    <div class="review-heading">
-        <h2>SHARE YOUR EXPERIENCE</h2>
+    <section class="review-section">
+      <div class="review-heading">
+        <h2>Share your experience</h2>
         <p>We'd love to hear your thoughts about HOMELUXE.</p>
-    </div>
+      </div>
 
-    <form class="review-form">
+      <form class="review-form">
+        <input type="text" placeholder="Your Name" required />
 
-        <input type="text" placeholder="Your Name" required>
-
-        <input type="email" placeholder="Your Email" required>
+        <input type="email" placeholder="Your Email" required />
 
         <textarea rows="6" placeholder="Write your review..."></textarea>
 
         <button type="submit">Submit Review</button>
-
-    </form>
-
-</section>
-<footer class="footer">
-    <div class="footer-container">
-
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
         <div class="footer-box">
-            <h2>HOMELUXE</h2>
-            <p>
-                Discover premium villas, luxury apartments, and dream homes.
-                We help you find the perfect property with trust and excellence.
-            </p>
+          <h2>HOMELUXE</h2>
+          <p>
+            Discover premium villas, luxury apartments, and dream homes. We help
+            you find the perfect property with trust and excellence.
+          </p>
         </div>
 
         <div class="footer-box" id="footer">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="property.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p>📍 Lonavala, Maharashtra</p>
-            <p>📞 +91 98765 43210</p>
-            <p>✉️ info@homeluxe.com</p>
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Lonavala, Maharashtra
+          </p>
+          <p>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> +91 98765 43210
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            info@homeluxe.com
+          </p>
         </div>
 
         <div class="footer-box">
-            <h3>Follow Us</h3>
+          <h3>Follow Us</h3>
 
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-    <hr>
-
-    <div class="copyright">
-        © 2026 HOMELUXE. All Rights Reserved.
-    </div>
-
-</footer>
-<script src="script.js"></script>
-</body>
+      <div class="copyright">© 2026 HOMELUXE. All Rights Reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
