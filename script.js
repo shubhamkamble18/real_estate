@@ -23,13 +23,15 @@ function toggle(){
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
-hamburger.addEventListener("click", () => {
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
-  if (navLinks.classList.contains("active")){
-    hamburger.innerText = " X ";
-  } 
-  else{
-     hamburger.innerText = " ☰ ";
-  }
-});
+    const isOpen = navLinks.classList.contains("active");
+    hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+    hamburger.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
+}

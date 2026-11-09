@@ -12,34 +12,32 @@
 </head>
 <body>
     <!-- header section  -->
-    <header>
-        <nav>
-        <div>
-          <div class="img">
-            <img class="logo" src="/images/final.png" alt="">  
-          </div>
-           <div class="search-box">
-              <i class="fa-solid fa-magnifying-glass"></i>
-               <input type="text" placeholder="Search by city, locality, project, or property...">
-            </div>
-          <ul>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="HOMELUXE home">
+          <img class="logo" src="/images/LOGO2.png" alt="">
+          <span class="brand-name">HOMELUXE</span>
+        </a>
 
-            <li><a href="index.html">Home </a></li>
-            <li><a href="property.html">properties</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            
-            <li>
-              <a href="login.html">
-                <button class="login-btn">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="property.html" class="active">Properties</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html" class="login-link">
+              <button class="login-btn" type="button">
                 <i class="fa-solid fa-user"></i>
                 Login
-             </button></a>
-            </li>
-          </ul>
-        </div>
-       </div>
-    </nav>
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
      
     <section class="properties">
